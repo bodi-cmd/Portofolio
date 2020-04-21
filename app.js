@@ -156,8 +156,6 @@ io.sockets.on('connection', function (socket) {
 	
 
     socket.on('disconnect', function (data) {
-        users.splice(users.indexOf(socket.username),1);
-        connections.splice(connections.indexOf(socket), 1);
         console.log('disconnected: %s sockets connected' + year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds, connections.length);
        
     });
