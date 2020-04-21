@@ -1,0 +1,60 @@
+﻿/*000000-666666-999999-d18d5a-ffffff*/
+body {
+    background:#666666;
+}
+
+@media only screen and (max-width: 600px) {
+
+#form{
+    margin-top:50%;
+    margin-left:5%;
+    width:90%;
+    background:#D18D5A;
+    padding-bottom:10px;
+    border:2px solid #999999;
+    border-radius:10px;
+    box-shadow:black 5px 5px 12px;
+}
+
+}
+@media only screen and (min-width: 600px) {
+
+    #form{
+    margin-top:15%;
+    margin-left:35%;
+    width:30%;
+    background:#D18D5A;
+    padding-bottom:10px;
+    border:2px solid #999999;
+    border-radius:10px;
+    box-shadow:black 5px 5px 12px;
+}
+
+}
+
+
+
+.id{
+    border-radius:5px;
+    border:1px solid #999999; 
+    margin-left:5%;
+    margin-top:10px;
+    width:90%;
+    height:30px;
+    padding-left:10px;
+}
+#form p{
+    margin-left:20px;
+    margin-top:10px;
+    color:white;
+}
+#btn{
+    border-radius:5px;
+    border:1px solid #999999; 
+    margin-left:5%;
+    margin-top:10px;
+    width:90%;
+    height:30px;
+    background:#ffffff;
+    box-shadow:black 2px 2px 5px;
+}

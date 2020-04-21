@@ -1,0 +1,101 @@
+﻿<html>
+        <head>
+            <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+            <title>Bodi's</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1">
+            <link rel="stylesheet" type="text/css" href="/css/style.css">
+            <link rel="stylesheet" type="text/css" href="/css/styleProjects.css">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+            <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+            <link rel="icon" href="../img/favicon.png">
+        
+        </head>
+        <body>
+            <div class="all">
+                <div class="nav">
+                    <bdi id="icon">B</bdi>
+                    <p>Bodi's</p>
+                    <div class="space"></div>
+                    <a href="/"><i class="fas fa-home"></i></a>
+                    <a href="/projects"><i class="fas fa-archive"></i></a>
+                    <a href="/contact"><i class="far fa-envelope"></i></a>
+                    <div class="space"></div>
+                    <a href="https://www.facebook.com/bogdan.barbu.5458"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/bogdanxbarbu/?hl=ro"><i class="fab fa-instagram"></i></a>
+                </div>
+                <h1 id="titleh1">ProBPM</h1>
+                <h1 id="titleh1">- take care of your heart</h1>
+                <div class="content">
+                    <p>ProBPM it's the bracelet that everyone needs.</p>
+                    <p>It basically is a device, that can save your life, when you do a heart attack.
+                        This bracelet, is connected permanently to your smartphone via bluetooth,
+                        and it monitors your heart rate. When it detects a dramatic change, it will 
+                        warn you, and if it detects that your heart is not beating anymore, it will call
+                        an ambulance with shared location.
+                    </p>
+                    
+                    <table id="customers">
+                            <tr>
+                              <th>Project Started On:</th>
+                              <th>2 May 2018</th>
+                            </tr>
+                            <tr>
+                                <th>Project Ended On:</th>
+                                <th>20 May 2018</th>
+                            </tr>
+                            <tr>
+                                <th>Project Production Costs:</th>
+                                <th>~$20</th>
+                            </tr>
+                            <tr>
+                                <th>Difficulty level:</th>
+                                <th>Medium</th>
+                            </tr>
+                    </table>
+                    <p>Let's start with the main <a href="https://www.ebay.com/itm/1PCS-Utility-Heart-Rate-Pulse-Sensor-Pulsesensor-Sensor-Module-For-Arduino-Hot/233108560271?_trkparms=aid%3D555018%26algo%3DPL.SIM%26ao%3D1%26asc%3D60256%26meid%3D9981d41307eb4b378366d033d1f601cd%26pid%3D100005%26rk%3D2%26rkt%3D12%26sd%3D191736124949%26itm%3D233108560271%26pmt%3D1%26noa%3D0%26pg%3D2047675&_trksid=p2047675.c100005.m1851" target="_blank">
+                        sensor</a>. It is a cheap chinese pulse sensor. I will use it in combination with an <a href="https://www.ebay.com/p/2037866336?iid=311076127758&rt=nc" target="_blank">
+                        Attiny85</a> microcontroller, because it's cheap and powerfull enough. The conectivity part is ensured
+                        by a <a href="https://www.ebay.com/p/676005030?iid=251886755046&rt=nc" target="_blank">
+                        HC-05 Bluetooth Module.</a> I'll leave you some pictures with these components below.</p>
+                        <img class="piese" src="../img/asd.png">
+                        <img class="piese" src="../img/Attiny.png">
+                        <img class="piese" src="../img/Sensor.png">
+                        <p>For powering the project, I chose one <a href="https://www.ebay.com/itm/PANASONIC-Li-Ion-3-7V-3400mAh-NCR18650B-Original-Battery/383146656402?epid=24012571299&hash=item5935520292:m:m6pvrC_5nb5b-kha53VTeYA"
+                             target="_blank">Li-Ion 18650 cell</a>. It has a lot of power and capacity,
+                            and it's also very compact. The battery voltage it's between 3.7V and 4.2V, so I boosted this
+                            voltage to 5V using a USB Charging Module (it is usually used in mobile power banks).
+                            Now the electronic part is finished. You can see below the chematic.
+                        </p>
+                        <img id="schema" src="../img/Capture.JPG">
+
+                        <p>For the enclosure, I designed and 3D printed a case, using AutoCAD</p>
+                        <img id="gif" src="../img/Capture1.PNG">
+                        <img id="gif" src="../img/Capture2.PNG">
+                        <img id="gif" src="../img/Capture3.PNG">
+                        <img id="gif" src="../img/Capture4.PNG">
+                        <img id="gif" src="../img/gif.gif">
+
+                        <p>Now, the physical part is done. We need to program the Android App and the Attiny.
+                            For the Android App, I used java in Android Studio and for the microcontroller i used 
+                            C++ in the Arduino IDE.
+                        </p>
+                        <img id="gif" src="../img/Capture5.PNG">
+                        <img id="gif" src="../img/Capture6.PNG">
+                        <p>-</p>
+                        <p>-</p>
+                        <p>-</p>
+                        <p>-</p>
+                        <p>End of the project!</p>
+                        <p>-</p>
+                </div>  
+            </div>
+        
+            
+        </body>
+        
+        </html>
+        
+        

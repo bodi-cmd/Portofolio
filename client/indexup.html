@@ -1,0 +1,46 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="./css/styleup.css">
+    <meta charset="utf-8">
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+</head>
+
+
+<body>
+    <div class="header">
+    <img id="logo" src="./img/logoup.png">
+    <div class="landing">
+    <button id="join">Join now</button>
+    <h3>Over 3 million freelancers and employers</h3>
+    </div>
+    <form action="register" method = "POST">
+        <input type="text" class="id" id="user" placeholder="Username" autocomplete="off" name="username" required> 
+        <input type="password" class="id" id="pass" placeholder="Password" autocomplete="off" name="password" required>
+        <input type="email" class="id" id="email" placeholder="Email" autocomplete="off" name="email" required>
+        <input type="date" class="id" id="date" placeholder="Your birthday" autocomplete="off" name="birth" required>
+        <input type="submit" id="btn">
+    </form>
+</div>
+    
+
+
+</body>
+
+<script>
+        $(document).ready(function(){
+            
+    $("form").toggle();
+  $('#join').click(function(){
+    $(".landing").toggle();
+    $("form").toggle();
+  });
+});
+</script>
+
+</html>

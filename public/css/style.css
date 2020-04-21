@@ -1,0 +1,437 @@
+﻿
+body{
+    background:#2c2c2e;
+}
+
+.hireform{
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+    display:none;
+    z-index: 2;
+    background:rgba(0,0,0,0.9);
+    position:fixed;
+    top:100px;
+    left:5%;
+    width:90%;
+    border-radius:10px;
+}
+.hireform #close{
+    outline:none;
+    float:right;
+    margin:10px;
+    background:none;
+    color:#ff0049;
+    border:2px solid #ff0049;
+    font-family:'Roboto';
+    border-radius:7px;
+}
+.hireform .field{
+    outline:none;
+    width:90%;
+    margin-left:5%;
+    height:50px;
+    font-size:20px;
+    margin-bottom:10px;
+    padding:10px;
+    background:none;
+    color:#ff0049;
+    border:2px solid #ff0049;
+}
+.hireform #message {
+    resize:none;
+    outline:none;
+    width:90%;
+    margin-left:5%;
+    height:150px;
+    font-size:15px;
+    margin-bottom:10px;
+    padding:10px;
+    background:none;
+    color:#ff0049;
+    border:2px solid #ff0049;
+}
+.hireform #submitform{
+    outline:none;
+    width:90%;
+    margin-left:5%;
+    height:50px;
+    font-size:20px;
+    margin-bottom:10px;
+    padding:10px;
+    background:none;
+    color:#3c9cff;
+    border:2px solid #3c9cff;
+}
+.hireform #txt{
+    text-align:center;
+    font-size:25px;
+}
+@keyframes slideInFromLeft {
+            0% {
+            transform: translateX(-100%);
+             }
+            60%{
+                
+            }
+            70%{
+                transform: translateX(0);
+            }
+             100% {
+              
+            }
+            }
+@keyframes slideInFromDown {
+            0% {
+            transform: translateY(-100%);
+             }
+            60%{
+                
+            }
+            70%{
+                transform: translateY(0);
+            }
+             100% {
+             
+            }
+            }
+
+
+@media only screen and (min-width: 600px) {
+    .hireform{
+    z-index: 2;
+    background:rgba(0,0,0,0.9);
+    position:fixed;
+    top:100px;
+    left:30%;
+    width:40%;
+    border-radius:10px;
+}
+.foil{
+    height: 100%;
+        width:100%;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        position: fixed;
+        background-color: rgba(24,29,79,0.8);
+}
+.form{
+    background:rgba(0,0,0,0.5);
+    width:30%;
+    margin-left:35%;
+    margin-top:200px;
+    border-radius:20px;
+    border:2px solid #151515;
+}
+.form p{
+    font-family:'Roboto';
+    font-size:30px;
+}
+.form #name{
+    outline:none;
+    width:80%;
+    margin-left:10%;
+    height:50px;
+    margin-bottom:20px;
+    padding:10px;
+    font-size:20px;
+    background:#151515;
+    border:2px solid #ff0049;
+    border-radius:20px;
+    color:#ff0049;
+}
+#skip{
+    outline:none;
+    width:20%;
+    margin-left:40%;
+    height:30px;
+    margin-bottom:20px;
+    background:none;
+    border:1px solid #ff0049;
+    border-radius:20px;
+    color:#ff0049;
+}
+#submitname{
+    outline:none;
+    color:black;
+    font-family:'Roboto';
+    font-size:20px;
+    width:50%;
+    margin-left:25%;
+    height:40px;
+    margin-bottom:20px;
+    background:#80ff5b;
+    border:none;
+    border-radius:20px;
+}
+    body {
+        background-image: url("../img/background.jpg"); /* Full height */
+        height: 100%;
+        /* Center and scale the image nicely */
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    h1 {
+        animation: 1.5s ease-out 0s 1 slideInFromLeft;
+        color: white;
+        font-size: 50px;
+        font-family: 'Roboto';
+    }
+
+    h2 {
+        animation: 2s ease-out 0s 1 slideInFromLeft;
+        color: #4a4b4d;
+        font-size: 20px;
+    }
+
+    .content {
+        margin-left: 150px;
+        margin-top: 100px;
+    }
+
+    bdi {
+        color: #ff0049;
+        font-size: 70px;
+        text-shadow: -6px 0px 0px #3c9cff;
+        padding: 0px;
+    }
+
+    .nav {
+        height: 100%;
+        width: 70px;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        overflow-x: hidden;
+        position: fixed;
+        background-color: rgba(0,0,0,0.5);
+    }
+
+    i {
+        color: #3c9cff;
+        font-size: 30px;
+        margin-left: 20px;
+        margin-top: 15px;
+        text-align: center;
+    }
+
+    .space {
+        height: 100px;
+    }
+
+    i:hover {
+        transition: 0.2s;
+        color: #ff0049;
+    }
+
+    p {
+        color: white;
+        font-family: 'Roboto';
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #icon {
+        margin-left: 15px;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+    }
+
+    #feelfree {
+        color: #3c9cff;
+        font-family: 'Roboto';
+        font-size: 30px;
+    }
+
+    #hire {
+    outline:none;
+        transition: 0.3s;
+        background: none;
+        font-size: 20px;
+        color: #ff0049;
+        height: 50px;
+        width: 200px;
+        border: 3px solid #ff0049;
+        margin-left: 50px;
+        border-radius: 20px;
+        animation: 1.5s ease-out 0s 1 slideInFromDown;
+    }
+
+        #hire:hover {
+            transition: 0.3s;
+            color: #3c9cff;
+            border: 3px solid #3c9cff;
+        }
+}
+
+@media only screen and (max-width: 600px) {
+    
+.foil{
+    height: 100%;
+        width:100%;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        position: fixed;
+        background-color: rgba(24,29,79,0.8);
+}
+.form{
+    background:rgba(0,0,0,0.5);
+    width:90%;
+    margin-left:5%;
+    margin-top:100px;
+    border-radius:20px;
+    border:2px solid #151515;
+}
+.form p{
+    font-family:'Roboto';
+    font-size:30px;
+}
+.form #name{
+    outline:none;
+    width:80%;
+    margin-left:10%;
+    height:50px;
+    margin-bottom:20px;
+    padding:10px;
+    font-size:20px;
+    background:#151515;
+    border:2px solid #ff0049;
+    border-radius:20px;
+    color:#ff0049;
+}
+#skip{
+    outline:none;
+    width:20%;
+    margin-left:40%;
+    height:30px;
+    margin-bottom:20px;
+    background:none;
+    border:1px solid #ff0049;
+    border-radius:20px;
+    color:#ff0049;
+}
+#submitname{
+    outline:none;
+    color:black;
+    font-family:'Roboto';
+    font-size:20px;
+    width:50%;
+    margin-left:25%;
+    height:40px;
+    margin-bottom:20px;
+    background:#80ff5b;
+    border:none;
+    border-radius:20px;
+}
+    .nav{
+    height:70px;
+    width:100%;
+    z-index:1;
+    top:0;
+    left:0;
+    overflow-x:hidden;
+    position:fixed;
+    background-color: rgba(0,0,0,0.5);
+    }
+
+    i{
+    color:#3c9cff;
+    font-size:30px;
+    margin-left:20px;
+    margin-top:15px;
+    text-align:center;
+}body {
+        background-image: url("../img/background.jpg"); /* Full height */
+        width: 100%;
+        /* Center and scale the image nicely */
+        background-position-x:-600px;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    li{
+        float:left;
+    }
+    .nav p{
+        display:none;
+
+    }
+    .space{
+        display:none;
+    }
+    .nav #icon{
+        display:none;
+    }
+    h1 {
+        animation: 1.5s ease-out 0s 1 slideInFromLeft;
+        color: white;
+        font-size: 50px;
+        font-family: 'Roboto';
+    }
+
+    h2 {
+        animation: 2s ease-out 0s 1 slideInFromLeft;
+        color: #4a4b4d;
+        font-size: 20px;
+    }
+
+    .content {
+        margin-left: 8%;
+        margin-top: 100px;
+    }
+
+    bdi {
+        color: #ff0049;
+        font-size: 70px;
+        text-shadow: -6px 0px 0px #3c9cff;
+        padding: 0px;
+    }
+
+
+    i:hover {
+        transition: 0.2s;
+        color: #ff0049;
+    }
+
+    p {
+        color: white;
+        font-family: 'Roboto';
+        font-size: 20px;
+        text-align: center;
+    }
+
+    #icon {
+        margin-left:80%;
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        font-size:50px;
+        text-shadow:-4px 0px 0px #3c9cff;
+    }
+
+    #feelfree {
+        color: #3c9cff;
+        font-family: 'Roboto';
+        font-size: 30px;
+    }
+
+    #hire {
+    outline:none;
+        transition: 0.3s;
+        background: none;
+        font-size: 20px;
+        color: #ff0049;
+        height: 50px;
+        width: 200px;
+        border: 3px solid #ff0049;
+        margin-left: 50px;
+        border-radius: 20px;
+        animation: 1.5s ease-out 0s 1 slideInFromDown;
+    }
+
+        #hire:hover {
+            transition: 0.3s;
+            color: #3c9cff;
+            border: 3px solid #3c9cff;
+        }
+}
