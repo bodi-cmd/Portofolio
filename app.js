@@ -39,7 +39,7 @@ var transporter = nodemailer.createTransport({
     }
 });
 
-server.listen(80);
+server.listen(82);
 serverhttps.listen(443);
 app.use(session({
 	secret: 'secret',
