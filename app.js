@@ -11,6 +11,8 @@ users = [];
 connections = [];
 var num_users=0;
 
+var num_users_insta=0;
+
 const fs = require('fs');
 const https = require('https');
 const http = require('http');
@@ -61,7 +63,7 @@ app.get('/diary', function(request, response) {
 	response.sendFile('/client/indexup.html', { root: __dirname });
 });
 app.get('/nr', function(request, response) {
-	response.json({ user_count: num_users });
+	response.json({ user_count_from_instagram: num_users_insta, user_count_total: num_users  });
 
 });
 app.post('/auth', function(request, response) {
@@ -144,6 +146,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function (req, res) {
     res.sendFile(__dirname + '/client/index.html');
+    num_users++;
+});
+app.get('/insta', function (req, res) {
+    res.sendFile(__dirname + '/client/index.html');
+    num_users_insta++;
 });
 
 console.log("A pornit serveru mosule!")
