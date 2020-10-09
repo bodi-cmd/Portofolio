@@ -13,23 +13,6 @@ var num_users=0;
 
 var num_users_insta=0;
 
-const fs = require('fs');
-const https = require('https');
-const http = require('http');
-
-const privateKey = fs.readFileSync('/etc/letsencrypt/live/bogdanbarbu.com/privkey.pem','utf8');
-const certificate = fs.readFileSync('/etc/letsencrypt/live/bogdanbarbu.com/cert.pem','utf8');
-const ca = fs.readFileSync('/etc/letsencrypt/live/bogdanbarbu.com/fullchain.pem','utf8');
-
-
-const credentials = {
-	key: privateKey,
-	cert: certificate,
-	ca: ca
-};
-
-var serverhttps = https.createServer(credentials,app);
-var server = http.createServer(app);
 
 
 
@@ -42,19 +25,13 @@ var transporter = nodemailer.createTransport({
 });
 
 server.listen(82);
-serverhttps.listen(443);
 app.use(session({
 	secret: 'secret',
 	resave: true,
 	saveUninitialized: true
 }));
 
-var connection = mysql.createConnection({
-	host     : 'localhost',
-	user     : 'root',
-	password : 'BodisDB',
-	database : 'nodelogin'
-});
+
 app.use(bodyParser.urlencoded({extended : true}));
 app.use(bodyParser.json());
 
@@ -66,26 +43,26 @@ app.get('/nr', function(request, response) {
 	response.json({ user_count_from_instagram: num_users_insta, user_count_total: num_users  });
 
 });
-app.post('/auth', function(request, response) {
-	var username = request.body.username;
-	var password = request.body.password;
-	if (username && password) {
-		connection.query('SELECT * FROM accounts WHERE username = ? AND passwords = ?', [username, password], function(error, results, fields) {
-			console.log(results);
-			if (results.length > 0) {
-				request.session.loggedin = true;
-				request.session.username = username;
-				response.redirect('/home');
-			} else {
-				response.send('Incorrect Username and/or Password!');
-			}			
-			response.end();
-		});
-	} else {
-		response.send('Please enter Username and Password!');
-		response.end();
-	}
-});
+// app.post('/auth', function(request, response) {
+// 	var username = request.body.username;
+// 	var password = request.body.password;
+// 	if (username && password) {
+// 		connection.query('SELECT * FROM accounts WHERE username = ? AND passwords = ?', [username, password], function(error, results, fields) {
+// 			console.log(results);
+// 			if (results.length > 0) {
+// 				request.session.loggedin = true;
+// 				request.session.username = username;
+// 				response.redirect('/home');
+// 			} else {
+// 				response.send('Incorrect Username and/or Password!');
+// 			}			
+// 			response.end();
+// 		});
+// 	} else {
+// 		response.send('Please enter Username and Password!');
+// 		response.end();
+// 	}
+// });
 
 /**app.post('/register', function(request, response) {
 	var usname = request.body.username;
