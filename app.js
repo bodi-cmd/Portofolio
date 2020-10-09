@@ -1,5 +1,7 @@
 var express = require('express');
 var app = express();
+
+var server = require('http').createServer(app);
 var io = require('socket.io').listen(server);
 var nodemailer = require('nodemailer');
 var path = require('path')
@@ -13,8 +15,6 @@ var num_users=0;
 
 var num_users_insta=0;
 
-
-var server = http.createServer(app);
 
 var transporter = nodemailer.createTransport({
     service: 'yahoo',
