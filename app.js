@@ -135,13 +135,13 @@ console.log("A pornit serveru mosule!")
 
 io.sockets.on('connection', function (socket) {
     connections.push(socket);
-    console.log('connected: %s sockets connected' + year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds, connections.length);
+ //   console.log('connected: %s sockets connected' + year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds, connections.length);
     num_users++;
     const fs = require('fs');
 	
 
     socket.on('disconnect', function (data) {
-        console.log('disconnected: %s sockets connected' + year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds, connections.length);
+       // console.log('disconnected: %s sockets connected' + year + "-" + month + "-" + date + " " + hours + ":" + minutes + ":" + seconds, connections.length);
        
     });
     //send mesage
