@@ -8,6 +8,7 @@ var path = require('path')
 var bodyParser = require('body-parser');
 var mysql = require('mysql');
 var session = require('express-session');
+const PORT = process.env.PORT || 5001;
 
 users = [];
 connections = [];
@@ -24,7 +25,7 @@ var transporter = nodemailer.createTransport({
     }
 });
 
-server.listen(82);
+server.listen(PORT);
 app.use(session({
 	secret: 'secret',
 	resave: true,
