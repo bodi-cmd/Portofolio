@@ -6,6 +6,7 @@ var path = require('path')
 var bodyParser = require('body-parser');
 var mysql = require('mysql');
 var session = require('express-session');
+var cors = require('cors');
 
 users = [];
 connections = [];
@@ -62,7 +63,7 @@ app.use(bodyParser.json());
 app.get('/diary', function(request, response) {
 	response.sendFile('/client/indexup.html', { root: __dirname });
 });
-app.get('/nr', function(request, response) {
+app.get('/nr',cors(), function(request, response,next) {
 	response.json({ user_count_from_instagram: num_users_insta, user_count_total: num_users  });
 
 });
