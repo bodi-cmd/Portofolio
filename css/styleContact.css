@@ -1,0 +1,61 @@
+﻿
+@media only screen and (min-width: 600px) {
+    #titleh1{
+        margin-left:100px;
+        margin-top:30px;
+    }
+    .mini{
+        width: 250px;
+        display: inline-block;
+        margin:10px
+    }
+    .tb_icon{
+        float:left;
+        margin:5px;
+        width:50px;
+    }
+    .tbnail {
+        width: 100%;
+        height: 200px;
+    }
+    .bot_bar{
+        height:60px;
+        background:rgba(0,0,0,0.6);
+    }
+    .app_title{
+        padding:5px;
+        text-align:left;
+        font-size:30px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #titleh1{
+        margin-bottom:0px;
+        font-size:30px;
+        text-align:center;
+        margin-top:70px;
+    }
+    .mini{
+        width: 55%;
+        margin-left:18%;
+        margin-bottom:20px;
+    }
+    .tb_icon{
+        float:left;
+        margin:5px;
+        width:50px;
+    }
+    .tbnail {
+        width: 100%;
+        height: 150px;
+    }
+    .bot_bar{
+        height:60px;
+        background:rgba(0,0,0,0.6);
+    }
+    .app_title{
+        padding:15px;
+        text-align:left;
+        font-size:20px;
+    }
+}

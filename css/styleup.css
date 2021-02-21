@@ -1,0 +1,87 @@
+﻿*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+@keyframes slideInFromLeft {
+    0% {
+     filter:blur(10px);transform: translateX(-100%);
+     }
+    60%{
+        
+    }
+    70%{
+        transform: translateX(0);
+    }
+     100% {
+      filter:blur(0);
+    }
+    }
+html,body{
+    height:100%;
+    background:#333333    ;
+    padding:0;
+    margin:0;overflow-x:hidden;
+}
+.header{
+    padding-top:0;
+    background-image:url(../img/img_hd.jpg);
+    
+    height:100%;
+    background-size: cover;
+    margin-bottom: 50px;
+}
+h1{
+    margin:0;
+}
+form{
+    animation:1.5s ease-out 0s 1 slideInFromLeft;
+}
+.id{
+    transform: translate(-50%,0);
+    margin-left:50%;
+    background:rgba(66, 66, 66, 0.466);
+    color:black;
+    font-size: 20px;
+    width:345px;
+    margin-top:10px;
+    height:50px;
+    padding:10px
+}
+#btn{
+    transform: translate(-50%,0);
+    margin-left:50%;
+    background:white;
+    font-size: 20px;
+    width:345px;
+    margin-top:10px;
+    height:50px;
+    padding:10px
+}
+#logo{
+    position: absolute;
+    margin-left: 20px;
+    margin-top:20px;
+}
+#join{
+    box-shadow: 10px 10px 50px black;
+    margin-top:30%;
+    color:white;
+    font-size: 25px;
+    transform: translate(-50%,0);
+    margin-left:50%;
+    width:200px;
+    height:50px;
+    background:transparent;
+    border:2px solid white;
+    border-radius:25px;
+}
+h3{
+    text-shadow:6px 6px 6px black;
+    color:white;
+    text-align: center;
+}
