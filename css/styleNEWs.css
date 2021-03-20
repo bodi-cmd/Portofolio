@@ -4,35 +4,7 @@ body {
   /* background: #050505;*/
   background-color: #141414;
 }
-#typewriter:after {
-  content: "|";
-  animation: blink 500ms linear infinite alternate;
-}
 
-@-webkit-keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@-moz-keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-@keyframes blink {
-  0% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 1;
-  }
-}
 .topnav {
   height: 50px;
   width: 100%;
@@ -62,6 +34,7 @@ body {
 #profile_pic {
   float: left;
   height: 300px;
+  width:363px;
 }
 
 #maintext {
@@ -215,16 +188,45 @@ body {
     color: white;
     background: none;
     border: none;
-    height: 240px;
+    height: 230px;
     overflow: hidden;
     margin: 0;
-    margin-left: -70px;
+    margin-left: -120px;
     font-family: "Courier New";
   }
-  
+  #typewriter:after {
+    content: "|";
+    animation: blink 500ms linear infinite alternate;
+  }
+
+  @-webkit-keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @-moz-keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+  @keyframes blink {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
   .btn {
     margin-top: 30px;
     height: 50px;
+    margin-left:5px;
     background: rgba(87, 35, 35, 0);
     border: none;
     font-size: 20px;
@@ -233,7 +235,9 @@ body {
   }
 
   .buttons {
-    margin-left: 14%;
+    width:270px;
+    -webkit-transform: translate(-50%, 0); 
+    margin-left:50%;
   }
 
   #maintext {
@@ -254,7 +258,8 @@ body {
   .block {
     margin-top: 30px;
     float: left;
-    margin-left: 15%;
+    margin-left: 50%;
+    -webkit-transform: translate(-50%, 0); 
     width: 270px;
     height: 350px;
     background: black;
@@ -286,3 +291,4 @@ body {
   margin: 0px;
   font-size: 20px;
 }
+
