@@ -37,64 +37,63 @@
 </head>
 
 
-<body>
-  <div class="page__style">
-    <div class="topnav">
-        <a class="active" href="/">Home</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-        <!-- <a href="">About</a> -->
+<div class="page__style">
+  <div class="topnav">
+      <a class="active" href="/">Home</a>
+      <a href="/projects">Projects</a>
+      <a href="/contact">Contact</a>
+      <a href="#about">About</a>
+    </div>
+    <div class="card">
+        <img id="profile_pic" src="./img/textalpha0.png" alt="">
+        <div id="maintext">
+        <h1>Hi, I'm <bdi id="icon">Bogdan</bdi></h1>
+        <div class="json">
+          <br>
+        <pre id="typewriter">
+                <span class="var-highlight">var</span> place_where = {
+                    Your_Ideas: <span class="string-highlight">'true'</span>,
+                    Services_quality: <span class="string-highlight">'100'</span>,
+                    Availability: <span class="string-highlight">'true'</span>,
+                    Advantages:[<span class="string-highlight">'low_price'</span>,
+                                <span class="string-highlight">'fast_delivery'</span>,
+                                <span class="string-highlight">'excelent_quality'</span>];
+                };
+                <span class="var-highlight">var</span> number_of_visitors = <span id="visitors" class="string-highlight"></span>;
+                <span class="var-highlight">var</span> number_of_clients = <span id="clients" class="string-highlight"></span>;  </pre>
+              
+        </div>
+        </div>
+        <div class="buttons">
+          <button class="btn" id="hire" onclick="hire()">Contact</button>
+          <button class="btn" id="work" onclick="work()">See my work</button>
+        </div>
       </div>
-      <div class="card">
-          <img id="profile_pic" src="./img/textalpha0.png" alt="">
-          <div id="maintext">
-          <h1>Hi, I'm <bdi id="icon">Bogdan</bdi></h1>
-          <div class="json">
-            <br>
-          <pre id="typewriter">
-          <span class="var-highlight">var</span> place_where = {
-              Your_Ideas: <span class="string-highlight">'true'</span>,
-              Services_quality: <span class="string-highlight">'100'</span>,
-              Availability: <span class="string-highlight">'true'</span>,
-              Advantages:[<span class="string-highlight">'low_price'</span>,
-                          <span class="string-highlight">'fast_delivery'</span>,
-                          <span class="string-highlight">'excelent_quality'</span>];
-          };
-          <span class="var-highlight">var</span> number_of_visitors = <span id="clients" class="string-highlight"></span>;
-          <span class="var-highlight">var</span> number_of_clients = <span id="visitors" class="string-highlight"></span>;  </pre>
-        
-          </div>
-          </div>
-          <div class="buttons">
-            <button class="btn" id="hire" onclick="hire()">Contact</button>
-            <button class="btn" id="work" onclick="work()">See my work</button>
-          </div>
+      <div class="container">
+        <div class="block">
+          <img src="./img/img_circuit.jpg" alt="" class="im">
+          <h1>Electronic engineering</h1>
         </div>
-        <div class="container">
-          <div class="block">
-            <img src="./img/img_circuit.jpg" alt="" class="im">
-            <h1>Electronic engineering</h1>
-          </div>
-          <div class="block">
-            <img src="./img/img_code.jpg" alt="" class="im">
-            <h1>Programming</h1>
-          </div>
-          <div class="block">
-            <img src="./img/img_device.jpg" alt="" class="im">
-            <h1>Automation engineering</h1>
-          </div>
-          <div class="block">
-            <img src="./img/img_servers.jpg" alt="" class="im">
-            <h1>Server management</h1>
-          </div>
-          </div>
-          <div class="footer">
-            <h3>Copyright &copy 2020 Bogdan Barbu. All Rights Deserved.</h3>
-          </div>
-        
-      
+        <div class="block">
+          <img src="./img/img_code.jpg" alt="" class="im">
+          <h1>Programming</h1>
+        </div>
+        <div class="block">
+          <img src="./img/img_device.jpg" alt="" class="im">
+          <h1>Automation engineering</h1>
+        </div>
+        <div class="block">
+          <img src="./img/img_servers.jpg" alt="" class="im">
+          <h1>Server management</h1>
+        </div>
+        </div>
+        <div class="footer">
+          <h3>Copyright &copy 2020 Bogdan Barbu. All Rights Deserved.</h3>
         </div>
       
+    
+      </div>
+    
 </body>
 <script type = "text/javascript">
   var image = document.getElementById("profile_pic");
