@@ -9,10 +9,13 @@
     <link rel="stylesheet" type="text/css" href="./css/styleNEWs.css">
     <link rel="stylesheet" type="text/css" href="./css/fade.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,500&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
+    
     <link rel="icon" href="./img/favicon.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -37,7 +40,7 @@
 </head>
 
 
-<div class="page__style">
+<!--<div class="page__style">-->
   <div class="topnav">
       <a class="active" href="/">Home</a>
       <a href="/projects">Projects</a>
@@ -70,25 +73,55 @@
         </div>
       </div>
       <div class="container">
-        <div class="block">
-          <img src="./img/img_circuit.jpg" alt="" class="im">
-          <h1>Electronic engineering</h1>
+        <div class="flex_element">
+          <div class="block">
+            <img src="./img/img_circuit.jpg" alt="" class="im">
+            <h1>Electronic engineering</h1>
+          </div>
         </div>
-        <div class="block">
-          <img src="./img/img_code.jpg" alt="" class="im">
-          <h1>Programming</h1>
+        <div class="flex_element">
+          <div class="block">
+            <img src="./img/img_code.jpg" alt="" class="im">
+            <h1>Programming</h1>
+          </div>
         </div>
-        <div class="block">
-          <img src="./img/img_device.jpg" alt="" class="im">
-          <h1>Automation engineering</h1>
-        </div>
-        <div class="block">
-          <img src="./img/img_servers.jpg" alt="" class="im">
-          <h1>Server management</h1>
+        <div class="flex_element">
+          <div class="block">
+            <img src="./img/img_device.jpg" alt="" class="im">
+            <h1>Automation engineering</h1>
+          </div>
         </div>
         </div>
+
+        <div class="contact_card">
+          <h1>Find me on...</h1>
+          <div class="flex_elements">
+            <div class="contact_block">
+              <i class="fab fa-github-square"></i>
+              <h3>Github</h3>
+            </div>
+            <div class="contact_block">
+              <i class="fab fa-linkedin"></i>
+              <h3>Linked In</h3>
+            </div>
+            <div class="contact_block">
+              <i class="fab fa-facebook-square"></i>
+              <h3>Facebook</h3>
+            </div>
+            <div class="contact_block">
+              <i class="fab fa-instagram"></i>
+              <h3>Instagram</h3>
+            </div>
+            <div class="contact_block">
+              <i class="fas fa-envelope-square"></i>
+              <h3>Email</h3>
+            </div>
+          </div>
+        
+        </div>
+
         <div class="footer">
-          <h3>Copyright &copy 2020 Bogdan Barbu. All Rights Deserved.</h3>
+          <h3>Copyright &copy 2021 Bogdan Barbu. All Rights Deserved.</h3>
         </div>
       
     
@@ -122,7 +155,7 @@
   }
     jQuery(document).ready(function(){
 
-      $('.page__style').addClass('animate_content');
+  /*    $('.page__style').addClass('animate_content');
   $('.page__description').fadeOut(0).delay(0).fadeIn();
 
   setTimeout(function() {
@@ -137,7 +170,7 @@
 
   setTimeout(function() {
     $('.home').addClass('fadeIn');
-  }, 1500);
+  }, 1500);  */
 
   //     $.get( "/nr", function( data ) {
   // var data_p = jQuery.parseJSON(JSON.stringify(data));

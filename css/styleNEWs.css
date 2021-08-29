@@ -1,6 +1,6 @@
 body {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Ubuntu', 'sans-serif';
   /* background: #050505;*/
   background-color: #141414;
 }
@@ -110,7 +110,49 @@ body {
   width: 100%;
 }
 
+/*                THIS IS FOR THE CONTACT FORM            */
+
+.contact_card{
+  width: 100%;
+  background: #000000;
+  margin-top:40px;
+}
+.flex_elements{
+  display: flex;
+  flex-direction: row;
+}
+.contact_block{
+  flex-grow: 1;
+}
+.contact_block i{
+  color: white;
+  -webkit-transform: translate(-50%, 0); 
+  margin-left:50%;
+  font-size: 7vw;
+}
+
+.contact_card h1{
+  color: white;
+  text-align: center;
+  padding-top:30px;
+  padding-bottom: 30px;
+}
+.contact_card h3{
+  color: white;
+  text-align: center;
+  padding-top:1vw;
+}
+
+.flex_element{
+  flex-grow: 1;
+}
+
+
+
+
+
 @media screen and (min-width: 911px) {
+  
   .var-highlight {
     color: #ff3873;
   }
@@ -160,22 +202,21 @@ body {
     margin-top: 15px;
     padding: 0;
     width: 100%;
+    display: flex;
   }
 
   .block {
     margin-top: 30px;
-    float: left;
-    margin-left: 5%;
     width: 270px;
-    height: 350px;
+    height: 230px;
     background: black;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px #797979;
+    -webkit-transform: translate(-50%, 0); 
+    margin-left:50%;
   }
 
   .im {
-    margin: 10px;
-    width: 250px;
+    margin: 0px;
+    width: 270px;
   }
 
   .block h1 {
@@ -188,7 +229,9 @@ body {
   .var-highlight {
     color: #ff3873;
   }
-
+  .flex_elements h3{
+    font-size: 14px;
+  }
   .string-highlight {
     color: #00b7ff;
   }
@@ -269,25 +312,22 @@ body {
 
   .container {
     margin-top: 400px;
-    padding: 0;
     width: 100%;
+    display: flex;
+    flex-direction: column;
   }
 
   .block {
     margin-top: 30px;
-    float: left;
-    margin-left: 50%;
-    -webkit-transform: translate(-50%, 0); 
     width: 270px;
-    height: 350px;
+    height: 230px;
     background: black;
-    border-radius: 10px;
-    box-shadow: 0px 0px 10px #797979;
+    -webkit-transform: translate(-50%, 0); 
+    margin-left:50%;
   }
 
   .im {
-    margin: 10px;
-    width: 250px;
+    width: 270px;
   }
 
   .block h1 {
