@@ -5,6 +5,10 @@ body {
   background-color: #141414;
 }
 
+a:hover {
+  text-decoration: none;
+  cursor: pointer;
+}
 .topnav {
   height: 50px;
   width: 100%;
