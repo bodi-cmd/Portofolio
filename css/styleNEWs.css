@@ -5,6 +5,30 @@ body {
   background-color: #141414;
 }
 
+.center{
+  -webkit-transform: translate(-50%, 0); 
+  margin-left:50vw;
+}
+
+.flex{
+display: flex;
+}
+
+.fl1{
+flex-grow: 1;
+}
+.fl2{
+  flex-grow: 2;
+}
+.fl3{
+  flex-grow: 3;
+}
+
+.to-left{
+  -webkit-transform: translate(-100%, 0); 
+  margin-left:100%;
+}
+
 a:hover {
   text-decoration: none;
   cursor: pointer;
@@ -204,13 +228,12 @@ a:hover {
 
   .container {
     margin-top: 15px;
+    margin-bottom: 35px;
     padding: 0;
     width: 100%;
-    display: flex;
   }
 
   .block {
-    margin-top: 30px;
     width: 270px;
     height: 230px;
     background: black;
@@ -230,6 +253,15 @@ a:hover {
   }
 }
 @media screen and (max-width: 910px) {
+  .m-center{
+    -webkit-transform: translate(-50%, 0); 
+    margin-left:50%;
+  }
+  .flex{
+    display: flex;
+    flex-direction: column;
+    }
+
   .var-highlight {
     color: #ff3873;
   }
@@ -301,6 +333,7 @@ a:hover {
   }
   .buttons {
     width:285px;
+    margin-bottom: 30px;
     -webkit-transform: translate(-50%, 0); 
     margin-left:50%;
   }
@@ -315,10 +348,8 @@ a:hover {
   }
 
   .container {
-    margin-top: 400px;
+    margin-top: 0px;
     width: 100%;
-    display: flex;
-    flex-direction: column;
   }
 
   .block {
@@ -346,7 +377,6 @@ a:hover {
   margin: 0;
   padding: 0;
   text-align: center;
-  margin-top: 50px;
 }
 
 .footer h3 {
