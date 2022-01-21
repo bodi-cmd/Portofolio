@@ -57,22 +57,23 @@
           <div class="json">
             <br>
           <pre id="typewriter">
-                  <span class="var-highlight">var</span> place_where = {
-                      Your_Ideas: <span class="string-highlight">'true'</span>,
-                      Services_quality: <span class="string-highlight">'100'</span>,
-                      Availability: <span class="string-highlight">'true'</span>,
-                      Advantages:[<span class="string-highlight">'low_price'</span>,
-                                  <span class="string-highlight">'fast_delivery'</span>,
-                                  <span class="string-highlight">'excelent_quality'</span>];
+                  <span class="var-highlight">var</span> placeWhere = {
+                      yourIdeas: <span class="string-highlight">true</span>,
+                      servicesQuality: <span class="string-highlight">100</span>,
+                      availability: <span class="string-highlight">true</span>,
+                      advantages:[<span class="string-highlight">'freeConsultance'</span>,
+                                  <span class="string-highlight">'professionalism'</span>,
+                                  <span class="string-highlight">'excelentQuality'</span>];
                   };
-                  <span class="var-highlight">var</span> number_of_visitors = <span id="visitors" class="string-highlight"></span>;
-                  <span class="var-highlight">var</span> number_of_clients = <span id="clients" class="string-highlight"></span>;  </pre>
+                  <span class="var-highlight">var</span> numberOfVisitors = <span id="visitors" class="string-highlight"></span>;
+                  <span class="var-highlight">var</span> numberOfClients = <span id="clients" class="string-highlight"></span>;  </pre>
                 
           </div>
         </div>
         <div class="buttons fadein">
-          <button class="btn" id="hire">Contact</button>
           <button class="btn" id="work" onclick="work()">See my work</button>
+          <button class="btn" id="hire">Contact</button>
+          <button class="btn" id="cv">View my CV</button>
         </div>
     </div>
     <br style="clear:both;" />
@@ -175,6 +176,10 @@
     location.replace("projects.html");
   }
     jQuery(document).ready(function(){
+
+      $('#cv').click(function(){
+        window.location.href = "./cv.pdf";
+      });
 
   /*    $('.page__style').addClass('animate_content');
   $('.page__description').fadeOut(0).delay(0).fadeIn();

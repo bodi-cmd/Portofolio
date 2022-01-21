@@ -119,13 +119,26 @@ a:hover {
 }
 
 .btn {
-  margin-top: 125px;
+  
   height: 50px;
   background: rgba(87, 35, 35, 0);
   border: none;
   font-size: 20px;
   color: #28ca00;
   border: 3px solid #28ca00;
+  flex-grow: 1;
+  margin-inline: 2px;
+  border-radius: 10px;
+}
+
+#cv{
+  width:252px;
+  margin-top:10px;
+}
+
+.buttons{
+  margin-top: 100px;
+  padding-left: 10px;
 }
 
 .btn:focus {
