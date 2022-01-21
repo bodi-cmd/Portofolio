@@ -34,12 +34,12 @@ function render_projects(data){
                                 <img src="${data[i].image}" alt="" class="project_img">
                                 </div>
                                 <div class="fl1">
-                                <div class="content m-center">
+                                <div class="content m-center fadein">
                                     <h1>${data[i].title}</h1>
                                     <p>${data[i].summary}  <a href="${data[i].link}" class="project_link">Read more...</a></p>
                                 
                                     <br style="clear:both" />
-                                    <div id="tags_${data[i].id}" class="tags">
+                                    <div id="tags_${data[i].id}" class="tags fadein">
                                     </div>
                                     <br style="clear:both" />
                                 </div> 

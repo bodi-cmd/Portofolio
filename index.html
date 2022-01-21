@@ -18,6 +18,7 @@
 
   <script src="./js/projects_data.js"></script>
   <script src="./js/projects_loader.js"></script>
+  <script src="./js/animations.js"></script>
     
     <link rel="icon" href="./img/favicon.png">
     <meta charset="UTF-8">
@@ -46,9 +47,8 @@
 <!--<div class="page__style">-->
     <div class="topnav">
       <a class="active" href="/">Home</a>
-      <a href="/projects">Projects</a>
-      <a href="/contact">Contact</a>
-      <a href="#about">About</a>
+      <a href="./projects.html">Projects</a>
+      <a id="contact">Contact</a>
     </div>
     <div class="card">
         <img id="profile_pic" src="./img/textalpha0.png" alt="">
@@ -70,14 +70,14 @@
                 
           </div>
         </div>
-        <div class="buttons">
-          <button class="btn" id="hire" onclick="hire()">Contact</button>
+        <div class="buttons fadein">
+          <button class="btn" id="hire">Contact</button>
           <button class="btn" id="work" onclick="work()">See my work</button>
         </div>
     </div>
     <br style="clear:both;" />
 
-    <div class="container flex">
+    <div class="container flex fadein">
       <div class="flex_element">
         <div class="block">
           <img src="./img/img_circuit.jpg" alt="" class="im">
