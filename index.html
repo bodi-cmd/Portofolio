@@ -1,6 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head> 
+
+  <meta property="og:title" content="Bogdan Barbu Software & Hardware solutions" />
+  <meta property="og:image" content="https://www.bogdanbarbu.com/img/textalpha0.gif" />
+  <meta property="og:type" content="website" />
+  <meta property="og:description"
+      content="Servicii software și hardware pentru compania ta, la un click distanță!" />
+  <meta property="og:locale" content="ro_ro" />
+
+
     <script src="https://cdn.socket.io/socket.io-1.4.5.js"></script>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
@@ -153,7 +162,7 @@
 <script type = "text/javascript">
   var image = document.getElementById("profile_pic");
   var currentPos = 0;
-  var images = ["./img/textalpha0.png","./img/textalpha0.png","./img/textalpha0.png","./img/textalpha0.png","./img/textalpha0.png","./img/textalpha0.gif", "./img/textalpha0.png","./img/textalpha0.gif"]
+  var images = ["./img/textalpha0.png","./img/textalpha0.gif", "./img/textalpha0.png","./img/textalpha0.gif"]
 
   function volgendefoto() {
       if (++currentPos >= images.length)
@@ -162,7 +171,7 @@
       image.src = images[currentPos];
   }
 
-  setInterval(volgendefoto, 1000);
+  setInterval(volgendefoto, 3000);
 
 </script>
 
