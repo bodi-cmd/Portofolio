@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mips Emulator</title>
+    <script src="./jquery.js"></script>
+    <script src="./convertors.js"></script>
+    <script src="./IF.class.js"></script>
+    <script src="./MC.class.js"></script>
+    <script src="./ID.class.js"></script>
+    <script src="./ALU.class.js"></script>
+    <script src="./MEM.class.js"></script>
+    <script src="./mips.js"></script>
+    
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./signals.css">
+</head>
+<body>
+    <!--<button id="clock-button">Clock!</button>
+    <p>PC:</p>
+    <p id="pc-field"></p>
+    <p>Instr:</p>
+    <p id="instruction"></p>
+    <p>RD1: <div id="rd1"></div> RD2: <div id="rd2"></div></p>
+    -->
+        <div id="dash">
+            <div id="instruction-box">
+            </div>
+            <div class="buttons">
+                <button id="hex" class="menu-btn">HEX</button>
+                <button id="bin" class="menu-btn selected">BIN</button>
+                <button id="asm" class="menu-btn ">ASM</button>
+                <button id="init" class="menu-btn">INIT</button>
+                <button id="rst" class="menu-btn">RST</button>
+                <button id="clk" class="menu-btn">CLK</button>
+            </div>
+            <div class="gauges">
+                <div class="reigsters">
+                    <div id="reg0" class="reg">$0: 2412</div>
+                    <div id="reg1" class="reg">$1: 2412</div>
+                    <div id="reg2" class="reg">$2: 2412</div>
+                    <div id="reg3" class="reg">$3: 2412</div>
+                    <div id="reg4" class="reg">$4: 2412</div>
+                    <div id="reg5" class="reg">$5: 2412</div>
+                    <div id="reg6" class="reg">$6: 2412</div>
+                </div>
+                <div class="memory">
+                    <p>Memory content:</p>
+                    <div class="mem-ctn">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <img id="schematic" src="./schematic.png" alt="">
+            <p id="instr-field" class="signal-field">-1</p>
+            <p id="ra1" class="signal-field">-1</p>
+            <p id="ra2" class="signal-field">-1</p>
+            <p id="pc-signal" class="signal-field">-1</p>
+            <p id="rd1" class="signal-field">-1</p>
+            <p id="rd2" class="signal-field">-1</p>
+            <p id="alures" class="signal-field">-1</p>
+            <p id="imm" class="signal-field">-1</p>
+            <p id="extimm" class="signal-field">-1</p>
+            <p id="wd-signal" class="signal-field">-1</p>
+            <p id="ja" class="signal-field">-1</p>
+            <p id="bra" class="signal-field">-1</p>
+            <p id="z-signal" class="signal-field">-1</p>
+            <p id="gz-signal" class="signal-field">-1</p>
+            <p id="pcsrc-signal" class="signal-field">-1</p>
+            
+            <div class="bulbs">
+                <div id="bulb-jump" class="bulb"></div>
+                <div id="bulb-regwr" class="bulb"></div>
+                <div id="bulb-mem2reg" class="bulb"></div>
+                <div id="bulb-memwr" class="bulb"></div>
+                <div id="bulb-branchgz" class="bulb"></div>
+                <div id="bulb-branch" class="bulb"></div>
+                <div id="bulb-aluop" class="bulb"></div>
+                <div id="bulb-alusrc" class="bulb"></div>
+                <div id="bulb-regdst" class="bulb"></div>
+                <div id="bulb-extop" class="bulb"></div>
+            </div>
+        </div>
+</body>
+</html>

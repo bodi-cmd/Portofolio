@@ -1,0 +1,136 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box; 
+    --menu-color: #2a2a2a;
+    --black-color:rgb(19, 19, 19);
+}
+
+body{
+    background-color: rgb(66, 66, 66);
+    color: white;
+}
+
+
+#dash{
+    width: 300px;
+    background: var(--menu-color);
+    height: 100%;
+    width: 300px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+}
+
+#instruction-box{
+    width: 300px;
+    height: 300px;
+    overflow-y: scroll;
+}
+.ins-line{
+    text-align: center;
+    background-color: rgb(70, 70, 70);
+    border-bottom: 1px solid rgb(95, 95, 95);
+}
+.selected-line{
+    background-color: rgb(176, 0, 0);
+}
+
+.content{
+    margin-left:300px;
+}
+
+.gauges{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: space-evenly;
+    margin-top:10px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: row;
+    width: 300px;
+    justify-content: space-evenly;
+    margin-top:10px;
+}
+.menu-btn{
+    background-color: rgb(22, 177, 11);
+    width: 40px;
+    height: 40px;
+    border:none;
+    border-radius: 3px;
+    font-size: 13px;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+.menu-btn:active{
+    background-color: rgb(20, 88, 15);
+    transform: translate(1px,1px);
+    box-shadow: none;
+}
+
+.selected{
+    background-color: rgb(20, 88, 15);
+    box-shadow: none;
+}
+
+#clk{
+    background-color: rgb(224, 80, 19);
+}
+.reg{
+    margin-left: 10px;
+    background-color: rgb(98, 98, 98);
+    padding-top:5px;
+    padding-inline:10px;
+    padding-bottom:15px;
+    text-align: center;
+    height: 30px;
+    margin-top:5px;
+    border-radius: 5px;
+    box-shadow: 1px 1px 3px rgb(0, 0, 0);
+}
+.mem-ctn{
+    margin-top:5px;
+    overflow-y: scroll;
+    height:220px;
+}
+
+.content{
+    position: relative;
+}
+
+#schematic{
+    width:1000px;
+    margin-top:100px;
+}
+
+.signal-field{
+    position: absolute;
+    top:0;
+    left:0;
+    text-align: center;
+}
+
+
+::-webkit-scrollbar {
+    width: 8px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #555555; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

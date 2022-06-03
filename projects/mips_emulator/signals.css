@@ -1,0 +1,76 @@
+#instr-field{
+    top:390px;
+    left:250px;
+}
+#ra1{
+    top:305px;
+    left:360px;
+}
+#ra2{
+    top:322px;
+    left:360px;
+}
+#pc-signal{
+    top:379px;
+    left:120px;
+}
+#rd1{
+    left:558px;
+    top:328px;
+}
+#rd2{
+    left:558px;
+    top:348px;
+}
+#alures{
+    left:720px;
+    top:345px;
+}
+#imm{
+    left:316px;
+    top:515px;
+}
+#extimm{
+    left:500px;
+    top:515px;
+}
+#wd-signal{
+    left:375px;
+    top:472px;
+}
+#ja{
+    left:162px;
+    top:115px;
+}
+#bra{
+    left:162px;
+    top:90px;
+}
+.bulbs{
+    width: 10px;
+    height: 200px;
+    position: absolute;
+    top:115px;
+    left:508px;
+}
+.bulb{
+    width: 10px;
+    height: 10px;
+    background-color:rgb(0, 60, 0);
+    margin-top:2.5px;
+}
+.on{
+    background-color:rgb(16, 210, 16);
+}
+#z-signal{
+    left:658px;
+    top:315px;
+}
+#gz-signal{
+    left:675px;
+    top:315px;
+}
+#pcsrc-signal{
+    left:782px;
+    top:135px;
+}
