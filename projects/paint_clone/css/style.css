@@ -1,0 +1,120 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
+
+:root {
+  --primary-1: #8758FF;
+  --secondary: #F2F2F2;
+  --primary-2:#5CB8E4;
+}
+
+body{
+    background-color: rgb(49, 52, 55);;
+}
+
+#drawing-area{
+    position: absolute;
+    left: 50px;
+    top:0px;
+    border-bottom:1px solid #000000;
+    border-right:1px solid #000000;
+    background-color: white;
+}
+
+.navbar{
+    background-color: var(--primary-1);
+    height: 100vh;
+    width: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.button{
+    width:48px;
+    height:48px;
+    background-color: var(--secondary);
+    margin-top: 2px;
+    margin-bottom: 2px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius:6px;
+}
+
+.button.selected{
+  background-color: var(--primary-2);
+}
+
+.button img{
+    height: 36px;
+    width:36px;
+    filter: drop-shadow(1px 1px 2px rgba(211, 211, 211, 0.336));
+}
+
+.slider-container{
+    position:absolute;
+    left:50px;
+    top:0px;
+    width:200px;
+    height:48px;
+    background-color: var(--primary-1);
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius:0 6px 6px 0;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 150px;
+    height: 5px;
+    border-radius: 5px;  
+    background: #181818;
+    outline: none;
+  }
+  
+  .slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 5px;
+    height: 15px;
+    border-radius: 2px; 
+    background: #5CB8E4;
+    cursor: pointer;
+  }
+
+  .slider-value{
+    margin-bottom: 10px;
+    width: 50px;
+    background-color: rgb(64, 72, 84);
+    border:1px solid black;
+    color:var(--secondary);
+    padding-left:5px;
+  }
+  .slider-value::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+
+  #color-picker{
+    margin-top:30px;
+    width: 48px;
+    height:48px;
+  }
+  
+
+
+
+.page{
+    position: relative;
+}
