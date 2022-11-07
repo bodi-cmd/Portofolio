@@ -1,6 +1,6 @@
 class InstructionDecoder{
 
-    reg = [0,0,0,0,0,0,0];
+    reg = [0,0,0,0,0,0,0,0];
     IF = null;
     MC = null;
     wd = 0;
@@ -46,7 +46,7 @@ class InstructionDecoder{
 
     reset(){
         this.wd = 0;
-        this.reg = [0,0,0,0,0,0,0];
+        this.reg = [0,0,0,0,0,0,0,0];
         this.ra1 = getBytes(this.IF.currentInstruction,12,10);
         this.ra2 = getBytes(this.IF.currentInstruction,9,7);
         this.rd1 = this.reg[this.ra1];

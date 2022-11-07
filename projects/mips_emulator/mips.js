@@ -1,6 +1,34 @@
 $( document ).ready(function() {
 
-    var instructionMode = intToBinInstructionWithUnderlines;
+    //var instructionMode = intToBinInstructionWithUnderlines;
+    var instructionMode = intToASM;
+
+    const ide = IDE("#input-code");
+    
+    let getCurrentOutput = ide.getConsoleMessage
+    const setCurrentOutput = (output) => {
+        const decoder = {
+            "console":ide.getConsoleMessage,
+            "output":ide.getOutputMessage
+        }
+
+        getCurrentOutput = decoder[output]
+        $("#console").text(getCurrentOutput());
+    }
+
+    setCurrentOutput("console");
+
+
+
+    const resetAll = () => {
+        IF.reset();
+        MC.reset();
+        ID.reset();
+        ALU.reset();
+        MEM.reset();
+        MEM.predictNextData();
+        MEM.notify(MEM);
+    }
    
     const IF = new InstructionFetch((IF) =>{
         $("#pc-field").text(IF.PC);
@@ -95,14 +123,53 @@ $( document ).ready(function() {
         $("#bin").addClass("selected");
     });
 
-    $("#rst").click(()=>{
-        IF.reset();
-        MC.reset();
-        ID.reset();
-        ALU.reset();
-        MEM.reset();
-        MEM.predictNextData();
-        MEM.notify(MEM);
+    $("#asm").click(()=>{
+        instructionMode = intToASM;
+        printInstructions(IF);
+        $(".menu-btn").removeClass("selected");
+        $("#asm").addClass("selected");
     });
+
+    $("#rst").click(resetAll);
+
+
+
+    //$(".overlay").hide();
+
+    $("#new-code").click(()=>{
+        $(".overlay").show();
+    })
+
+    $(".overlay").click(()=>{
+        $(".overlay").hide();
+    })
+
+    $(".popup").click((event)=>{
+        event.stopPropagation();
+    })
+
+
+    $("#console-btn").click(()=>{
+        $(".console-toolbar-btn").removeClass("toolbar-selected");
+        $("#console-btn").addClass("toolbar-selected");
+        setCurrentOutput("console");
+    });
+    $("#output-btn").click(()=>{
+        $(".console-toolbar-btn").removeClass("toolbar-selected");
+        $("#output-btn").addClass("toolbar-selected");
+        setCurrentOutput("output");
+    });
+
+    $("#done").click((event)=>{
+        try{
+            const code = ide.getCode()
+            IF.ROM = code;
+            resetAll()
+            setCurrentOutput("console");
+        }catch(e){
+            setCurrentOutput("console");
+            console.error(e)
+        }
+    })
 
 });
