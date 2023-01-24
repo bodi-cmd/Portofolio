@@ -1,11 +1,19 @@
 var projects_obj = [
     {   
-        id:"srtify",
-        title:".srtify",
-        summary:'Cu toții am apelat măcar odată la metode mai puțin etice de vizionare a filmelor. Dar ce te faci cu subtitrarea care acum e plină de caractere corupte în loc de diacritice? Well, acesta este prețul pirateriei...<b> Sau poți descărca această aplicație care îți repară toate subtitrările!</b>',
-        link:'/',
-        image:'./img/renders/laptop_srtify.webp',
-        tags:['C']
+        id:"mips",
+        title:"MIPS emulator",
+        summary:'MIPS este o arhitectură de procesor foarte scalabilă care utilizează setul de instrucțiuni RISC. Aplicația are rolul de a simula un astfel de procesor, rulând cod mașină direct în browser. După ce a fost încărcat și compilat codul din limbaj de asamblare în instrucțiuni binare, poate fi urmărită executarea lui pas cu pas.',
+        link:'https://bodi-cmd.github.io/mips-simulator/',
+        image:'./img/renders/procesor.webp',
+        tags:['HTML','CSS','Javascript','Computer Arhitecture']
+    },
+    {   
+        id:"teams_clone",
+        title:"Megasoft Groups",
+        summary:'În prezent, tot mai multe companii, dar și instituții de învățământ au recurs la soluții de comunicare online. Megasoft Groups este o aplicație similară cu Microsoft Teams, unde utilizatorii pot crea și evalua taskuri, încărca fișiere și comunica cu alte persoane în timp real.',
+        link:'https://ms-groups.herokuapp.com/',
+        image:'./img/renders/teams.webp',
+        tags:['Javascript','SCSS','React','Java',"Springboot",'MySQL']
     },
     {   
         id:"auto_chess",

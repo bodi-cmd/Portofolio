@@ -28,7 +28,7 @@ function clear_projects(){
 
 function render_projects(data){
     for(var i=0;i<data.length;i++){
-
+        const url = `<a href="${data[i].link}" class="project_link">Citeste mai mult...</a>`
         $(".projects").append(`<div class="project flex">
                                 <div class="fl1">
                                 <img src="${data[i].image}" alt="" class="project_img">
@@ -36,7 +36,8 @@ function render_projects(data){
                                 <div class="fl1">
                                 <div class="content m-center fadein">
                                     <h1>${data[i].title}</h1>
-                                    <p>${data[i].summary}  <a href="${data[i].link}" class="project_link">Read more...</a></p>
+                                    <p>${data[i].summary}  ${data[i].link && data[i].link != '/' ? url : ''}</p>
+                                    
                                 
                                     <br style="clear:both" />
                                     <div id="tags_${data[i].id}" class="tags fadein">
